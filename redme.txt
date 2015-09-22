@@ -19,19 +19,6 @@ PetClinic :: a Spring Framework demonstration
     <title>乐思购商品录入</title>
 <spring:url value="/resources/css/petclinic.css" var="petclinicCss" />
 <link href="${petclinicCss}" rel="stylesheet" />
-
-<spring:url value="/webjars/jquery/2.0.3/jquery.js" var="jQuery" />
-<script src="${jQuery}"></script>
-
-<!-- jquery-ui.js file is really big so we only load what we need instead of loading everything -->
-<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery.ui.core.js"
-	var="jQueryUiCore" />
-<script src="${jQueryUiCore}"></script>
-
-<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery.ui.datepicker.js"
-	var="jQueryUiDatePicker" />
-<script src="${jQueryUiDatePicker}"></script>
-
 <!-- jquery-ui.css file is not that big so we can afford to load it -->
 <spring:url value="/webjars/jquery-ui/1.10.3/themes/base/jquery-ui.css"
 	var="jQueryUiCss" />
@@ -66,86 +53,6 @@ PetClinic :: a Spring Framework demonstration
 	rel="stylesheet" /> -->
 <spring:url value="/resources/css/demo_page.css" var="demopagecss" />
 <link href="${demopagecss}" rel="stylesheet" />
-
-<!-- <script
-	src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script> -->
-<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery-ui.js"
-	var="jQueryUi" />
-<script src="${jQueryUi}"></script>
-<!-- <script
-	src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script> -->
-<spring:url value="/resources/js/jquery.dataTables.min.js"
-	var="dataTablesMinJs" />
-<script src="${dataTablesMinJs}"></script>
-</head>
-
-<%-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> --%>
-<spring:url value="/resources/js/jquery.min.js" var="jquery"/>
-    <script src="${jquery}"></script>
-<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<%-- <script src="js/vendor/jquery.ui.widget.js"></script> --%>
-<spring:url value="/resources/js/vendor/jquery.ui.widget.js" var="widget"/>
-    <script src="${widget}"></script>
-<!-- The Templates plugin is included to render the upload/download listings -->
-<%-- <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script> --%>
-<spring:url value="/resources/js/tmpl.min.js" var="tmplMin"/>
-    <script src="${tmplMin}"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<%-- <script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script> --%>
-<spring:url value="/resources/js/load-image.all.min.js" var="loadImage"/>
-    <script src="${loadImage}"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<%-- <script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script> --%>
-<spring:url value="/resources/js/canvas-to-blob.min.js" var="canvas"/>
-    <script src="${canvas}"></script>
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<%-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> --%>
-<spring:url value="/resources/js/bootstrap.min.js" var="bootstrapMin"/>
-    <script src="${bootstrapMin}"></script>
-<!-- blueimp Gallery script -->
-<%-- <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script> --%>
-<spring:url value="/resources/js/jquery.blueimp-gallery.min.js" var="blueimpGalleryJs"/>
-    <script src="${blueimpGalleryJs}"></script>
-<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<%-- <script src="js/jquery.iframe-transport.js"></script> --%>
-<spring:url value="/resources/js/jquery.iframe-transport.js" var="fileuploadIframe"/>
-    <script src="${fileuploadIframe}"></script>
-<!-- The basic File Upload plugin -->
-<%-- <script src="js/jquery.fileupload.js"></script> --%>
-<spring:url value="/resources/js/jquery.fileupload.js" var="fileuploadJs"/>
-    <script src="${fileuploadJs}"></script>
-<!-- The File Upload processing plugin -->
-<%-- <script src="js/jquery.fileupload-process.js"></script> --%>
-<spring:url value="/resources/js/jquery.fileupload-process.js" var="fileuploadProcessJs"/>
-    <script src="${fileuploadProcessJs}"></script>
-<!-- The File Upload image preview & resize plugin -->
-<%-- <script src="js/jquery.fileupload-image.js"></script> --%>
-<spring:url value="/resources/js/jquery.fileupload-image.js" var="fileuploadImageJs"/>
-    <script src="${fileuploadImageJs}"></script>
-<!-- The File Upload audio preview plugin -->
-<%-- <script src="js/jquery.fileupload-audio.js"></script> --%>
- <spring:url value="/resources/js/jquery.fileupload-audio.js" var="fileuploadAudio"/>
-    <script src="${fileuploadAudio}"></script>
-<!-- The File Upload video preview plugin -->
-<%-- <script src="js/jquery.fileupload-video.js"></script> --%>
- <spring:url value="/resources/js/jquery.fileupload-video.js" var="fileuploadVideo"/>
-    <script src="${fileuploadVideo}"></script>
-<!-- The File Upload validation plugin -->
-<%-- <script src="js/jquery.fileupload-validate.js"></script> --%>
- <spring:url value="/resources/js/jquery.fileupload-validate.js" var="fileuploadValidate"/>
-    <script src="${fileuploadValidate}"></script>
-<!-- The File Upload user interface plugin -->
-<%-- <script src="js/jquery.fileupload-ui.js"></script> --%>
- <spring:url value="/resources/js/jquery.fileupload-ui.js" var="fileuploadUi"/>
-    <script src="${fileuploadUi}"></script>
-<!-- The main application script -->
-<%-- <script src="js/main.js"></script> --%>
- <spring:url value="/resources/js/main.js" var="main"/>
-    <script src="${main}"></script>
-<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
-<!--[if (gte IE 8)&(lt IE 10)]>
-<script src="js/cors/jquery.xdr-transport.js"></script>
-<![endif]-->
 
 
 
@@ -361,6 +268,97 @@ PetClinic :: a Spring Framework demonstration
     </tr>
 {% } %}
 </script>
+
+<spring:url value="/webjars/jquery/2.0.3/jquery.js" var="jQuery" />
+<script src="${jQuery}"></script>
+
+<!-- jquery-ui.js file is really big so we only load what we need instead of loading everything -->
+<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery.ui.core.js"
+	var="jQueryUiCore" />
+<script src="${jQueryUiCore}"></script>
+<%-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> --%>
+<spring:url value="/resources/js/jquery.min.js" var="jquery"/>
+    <script src="${jquery}"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<%-- <script src="js/vendor/jquery.ui.widget.js"></script> --%>
+<spring:url value="/resources/js/vendor/jquery.ui.widget.js" var="widget"/>
+    <script src="${widget}"></script>
+
+<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery.ui.datepicker.js"
+	var="jQueryUiDatePicker" />
+<script src="${jQueryUiDatePicker}"></script>
+
+<!-- <script
+	src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script> -->
+<spring:url value="/webjars/jquery-ui/1.10.3/ui/jquery-ui.js"
+	var="jQueryUi" />
+<script src="${jQueryUi}"></script>
+<!-- <script
+	src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script> -->
+<spring:url value="/resources/js/jquery.dataTables.min.js"
+	var="dataTablesMinJs" />
+<script src="${dataTablesMinJs}"></script>
+</head>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<%-- <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script> --%>
+<spring:url value="/resources/js/tmpl.min.js" var="tmplMin"/>
+    <script src="${tmplMin}"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<%-- <script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script> --%>
+<spring:url value="/resources/js/load-image.all.min.js" var="loadImage"/>
+    <script src="${loadImage}"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<%-- <script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script> --%>
+<spring:url value="/resources/js/canvas-to-blob.min.js" var="canvas"/>
+    <script src="${canvas}"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<%-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> --%>
+<spring:url value="/resources/js/bootstrap.min.js" var="bootstrapMin"/>
+    <script src="${bootstrapMin}"></script>
+<!-- blueimp Gallery script -->
+<%-- <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script> --%>
+<spring:url value="/resources/js/jquery.blueimp-gallery.min.js" var="blueimpGalleryJs"/>
+    <script src="${blueimpGalleryJs}"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<%-- <script src="js/jquery.iframe-transport.js"></script> --%>
+<spring:url value="/resources/js/jquery.iframe-transport.js" var="fileuploadIframe"/>
+    <script src="${fileuploadIframe}"></script>
+<!-- The basic File Upload plugin -->
+<%-- <script src="js/jquery.fileupload.js"></script> --%>
+<spring:url value="/resources/js/jquery.fileupload.js" var="fileuploadJs"/>
+    <script src="${fileuploadJs}"></script>
+<!-- The File Upload processing plugin -->
+<%-- <script src="js/jquery.fileupload-process.js"></script> --%>
+<spring:url value="/resources/js/jquery.fileupload-process.js" var="fileuploadProcessJs"/>
+    <script src="${fileuploadProcessJs}"></script>
+<!-- The File Upload image preview & resize plugin -->
+<%-- <script src="js/jquery.fileupload-image.js"></script> --%>
+<spring:url value="/resources/js/jquery.fileupload-image.js" var="fileuploadImageJs"/>
+    <script src="${fileuploadImageJs}"></script>
+<!-- The File Upload audio preview plugin -->
+<%-- <script src="js/jquery.fileupload-audio.js"></script> --%>
+ <spring:url value="/resources/js/jquery.fileupload-audio.js" var="fileuploadAudio"/>
+    <script src="${fileuploadAudio}"></script>
+<!-- The File Upload video preview plugin -->
+<%-- <script src="js/jquery.fileupload-video.js"></script> --%>
+ <spring:url value="/resources/js/jquery.fileupload-video.js" var="fileuploadVideo"/>
+    <script src="${fileuploadVideo}"></script>
+<!-- The File Upload validation plugin -->
+<%-- <script src="js/jquery.fileupload-validate.js"></script> --%>
+ <spring:url value="/resources/js/jquery.fileupload-validate.js" var="fileuploadValidate"/>
+    <script src="${fileuploadValidate}"></script>
+<!-- The File Upload user interface plugin -->
+<%-- <script src="js/jquery.fileupload-ui.js"></script> --%>
+ <spring:url value="/resources/js/jquery.fileupload-ui.js" var="fileuploadUi"/>
+    <script src="${fileuploadUi}"></script>
+<!-- The main application script -->
+<%-- <script src="js/main.js"></script> --%>
+ <spring:url value="/resources/js/main.js" var="main"/>
+    <script src="${main}"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+<!--[if (gte IE 8)&(lt IE 10)]>
+<script src="js/cors/jquery.xdr-transport.js"></script>
+<![endif]-->
 
 
 <jsp:include page="../fragments/footer.jsp"/>
